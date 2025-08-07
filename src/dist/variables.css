@@ -4,7 +4,7 @@
   --color-text: #000;
   --font-main: "Roboto", sans-serif;
   /* === Фон === */
-  --body-bg-image: url("dist/background_blago.b490892f.jpg");
+  --body-bg-image: url("background_blago.b490892f.jpg");
   --body-bg-repeat: no-repeat;
   --body-bg-position: center center;
   --body-bg-attachment: fixed;
