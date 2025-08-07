@@ -1,0 +1,40 @@
+main.video-grid {
+  margin-left: var(--video-grid-margin-left);
+  padding: var(--video-grid-padding);
+  grid-template-columns: repeat(auto-fit, minmax(var(--video-grid-min-col-width), 1fr));
+  gap: var(--video-grid-gap);
+  box-sizing: border-box;
+  display: grid;
+}
+
+.video-card {
+  background-color: var(--video-card-bg);
+  border-radius: var(--video-card-radius);
+  padding: var(--video-card-padding);
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-direction: column;
+  transition: transform .2s;
+  display: flex;
+}
+
+.video-card:hover {
+  transform: translateY(var(--video-card-hover-shift));
+}
+
+.video-card video {
+  border-radius: var(--video-card-radius);
+  width: 100%;
+}
+
+.video-card h3 {
+  font-size: var(--video-title-size);
+  margin: var(--video-title-margin);
+}
+
+.video-card p {
+  font-size: var(--video-desc-size);
+  color: var(--video-desc-color);
+  margin: var(--video-desc-margin);
+}
+/*# sourceMappingURL=wwww.3e88cf0f.css.map */
