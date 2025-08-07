@@ -1,0 +1,182 @@
+.sidebar {
+  display: var(--sidebar-display, block);
+}
+
+/* Верхня панель фіксована */
+header.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 48px;
+  background-color: var(--topbar-bg-color);
+  border-bottom: 1px solid var(--topbar-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 2000;
+  box-sizing: border-box;
+  width: 100%; 
+}
+
+main.video{
+  -grid {
+    margin-left: var(--video-grid-margin-left);
+    padding: var(--video-grid-padding);
+    grid-template-columns: var(--video-grid-columns);
+    margin-top: 48px;
+  }
+  &-card h3 {
+    font-size: var(--video-title-font-size);
+    &p {
+      font-size: var(--video-desc-font-size);
+    }
+  }
+}
+
+/* Кнопка меню з лівої сторони */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+
+  cursor: pointer;
+  color: var(--color-text);
+
+  z-index: 10;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Логотип по центру */
+.mobile {
+  &-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    height: 32px;
+
+    pointer-events: none;
+
+    & img {
+      height: 32px;
+    }
+  }
+}
+
+/* Кнопка пошуку з правої сторони */
+.search-toggle {
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Мобільне поле пошуку */
+.mobile{
+  &-search{
+    &-form {
+      display: none;
+      position: fixed;
+      top: 48px;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: #fff;
+      z-index: 1999;
+      box-sizing: border-box;
+      &.active {
+        display: block;
+      }
+      & input[type="search"] {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        padding: 8px 12px;
+        font-size: 14px;
+        border: 1px solid var(--search-input-border-color);
+        border-radius: var(--search-input-border-radius);
+      }
+      
+    }
+  }
+}
+
+/* Бокове меню для мобільних */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background-color: var(--sidebar-bg-color);
+  border-right: 1px solid var(--sidebar-border-color);
+  padding: var(--sidebar-padding);
+  box-sizing: border-box;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1500;
+  transition: left 0.3s ease;
+  display: flex;
+  &.open {
+    left: 0;
+  }
+  
+}
+
+/* Кнопка закриття меню у мобільній панелі */
+.close-sidebar {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 30px;
+  
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: var(--sidebar-text-color);
+}
+
+/* Затемнення фону */
+body.sidebar-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1400;
+}
+
+/* ПК-версія */
+@media (min-width: 768px) {
+  header.topbar {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    left: auto;
+  }
+
+  .menu-toggle,
+  .search-toggle,
+  .mobile-search-form,
+  .mobile-logo {
+    display: none !important;
+  }
+}
+
+/* Мобільна версія */
+@media (max-width: 767px) {
+  .desktop-search-form {
+    display: none;
+  }
+}

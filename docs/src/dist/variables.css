@@ -1,0 +1,86 @@
+@charset "UTF-8";
+:root {
+  /* === Шрифт і кольори === */
+  --color-text: #000;
+  --font-main: "Roboto", sans-serif;
+  /* === Фон === */
+  --body-bg-image: url("background_blago1.jpg");
+  --body-bg-repeat: no-repeat;
+  --body-bg-position: center center;
+  --body-bg-attachment: fixed;
+  --body-bg-size: 10%;
+  --body-bg-final-position: right bottom;
+  /* === Сітка === */
+  --video-grid-margin-left: 240px;
+  --video-grid-padding: 70px 20px 20px;
+  --video-grid-gap: 20px;
+  --video-grid-min-col-width: 280px;
+  --video-card-bg: rgba(250, 250, 250, 0.75);
+  --video-card-radius: 8px;
+  --video-card-padding: 10px;
+  --video-card-hover-shift: -4px;
+  --video-grid-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* === Текст відео === */
+  --video-title-size: 5px;
+  --video-title-margin: 5px 0px 3px;
+  --video-desc-size: 5px;
+  --video-desc-color: #555;
+  --video-desc-margin: 0;
+  /* === Бокове меню === */
+  --sidebar-width: 240px;
+  --sidebar-padding: 10px;
+  --sidebar-border-color: #ddd;
+  --sidebar-bg-color: #fff;
+  --sidebar-text-color: #000;
+  --sidebar-btn-font-size: 15px;
+  --sidebar-btn-padding: 10px 15px;
+  --sidebar-btn-border-radius: 10px;
+  --sidebar-btn-hover-bg: #f0f0f0;
+  --sidebar-btn-active-bg: #dcdcdc;
+  --sidebar-btn-active-font-weight: 600;
+  --sidebar-z-index: 1001;
+  --logo-container-margin-bottom: 20px;
+  /* === Верхня панель === */
+  --topbar-left: 240px;
+  --topbar-height: 60px;
+  --topbar-bg-color: #fff;
+  --topbar-border-color: #ddd;
+  --topbar-padding: 0 20px;
+  --topbar-z-index: 1000;
+  /* === Форма пошуку === */
+  --search-form-max-width: 600px;
+  --search-input-padding: 8px 40px 8px 12px;
+  --search-input-font-size: 16px;
+  --search-input-border-color: #ccc;
+  --search-input-border-radius: 40px;
+  /* === Кнопка пошуку === */
+  --search-button-font-size: 18px;
+  --search-button-color: #666;
+  --search-button-hover-color: #000;
+  --search-button-right: 8px;
+  --search-button-padding: 0;
+  --search-button-transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-display: none;
+    --topbar-left: 0;
+    --topbar-width: 100%;
+    --topbar-padding: 0 10px;
+    --video-grid-margin-left: 0;
+    --video-grid-padding: 70px 10px 20px;
+    --video-grid-columns: 1fr;
+    --video-title-font-size: 14px;
+    --video-desc-font-size: 12px;
+    --search-input-font-size: 14px;
+    --search-input-padding: 6px 40px 6px 10px;
+    --search-button-font-size: 14px;
+    --search-button-right: 10px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=variables.css.map */
