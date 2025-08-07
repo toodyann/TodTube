@@ -1,0 +1,40 @@
+main.video-grid {
+  margin-left: var(--video-grid-margin-left);
+  padding: var(--video-grid-padding);
+  grid-template-columns: repeat(auto-fit, minmax(var(--video-grid-min-col-width), 1fr));
+  gap: var(--video-grid-gap);
+  box-sizing: border-box;
+  display: grid;
+}
+
+main.video-card {
+  background-color: var(--video-card-bg);
+  border-radius: var(--video-card-radius);
+  padding: var(--video-card-padding);
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-direction: column;
+  transition: transform .2s;
+  display: flex;
+}
+
+main.video:hover {
+  transform: translateY(var(--video-card-hover-shift));
+}
+
+main.videoh3 {
+  font-size: var(--video-title-size);
+  margin: var(--video-title-margin);
+}
+
+main.videop {
+  font-size: var(--video-desc-size);
+  color: var(--video-desc-color);
+  margin: var(--video-desc-margin);
+}
+
+.video-card video {
+  border-radius: var(--video-card-radius);
+  width: 100%;
+}
+/*# sourceMappingURL=wwww.7b86dcc0.css.map */

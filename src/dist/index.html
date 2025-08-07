@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="uk"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TodTube</title>
+  <link rel="stylesheet" href="/wwww.ccd3923e.css">
+  <link rel="stylesheet" href="/wwww.e173b884.css">
+  <link rel="stylesheet" href="/wwww.9efa9803.css">
+  <link rel="stylesheet" href="/wwww.ef7b8358.css">
+  <link rel="stylesheet" href="/wwww.23b97117.css">
+  <link rel="stylesheet" href="/wwww.d731318c.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Бокове меню для ппк -->
+<nav class="sidebar" aria-label="Головне меню">
+  <div class="logo-container">
+    <a href="https://tonyk4.github.io/TodTube/src" aria-label="Домашня сторінка TodTube">
+      <img src="/TodTube_logo.d64fd3d1.png" alt="TodTube Logo" width="100">
+    </a>
+  </div>
+  <ul>
+    <li><a href="https://tonyk4.github.io/TodTube/src" class="sidebar-btn active">Головна</a></li>
+    <li><a href="#" class="sidebar-btn">TodTube Shorts</a></li>
+    <li><a href="#" class="sidebar-btn">Підписки</a></li>
+    <li><a href="#" class="sidebar-btn"><strong>Ви</strong></a></li>
+    <li><a href="#" class="sidebar-btn">Історія</a></li>
+    <li><a href="#" class="sidebar-btn">Плейлисти</a></li>
+    <li><a href="#" class="sidebar-btn">Ваші відео</a></li>
+    <li><a href="#" class="sidebar-btn">Дивитись пізніше</a></li>
+    <li><a href="#" class="sidebar-btn">Відео, які сподобались</a></li>
+    <li><a href="/settings.html" class="sidebar-btn">Налаштування</a></li>
+  </ul>
+</nav>
+
+<!-- Тел бокове меню -->
+<nav class="sidebar mobile-sidebar" aria-label="Мобільне головне меню">
+  <button class="close-sidebar" aria-label="Закрити меню" onclick="toggleSidebar()">×</button>
+  <ul>
+    <li><a href="https://tonyk4.github.io/TodTube/src" class="sidebar-btn active">Головна</a></li>
+    <li><a href="#" class="sidebar-btn">TodTube Shorts</a></li>
+    <li><a href="#" class="sidebar-btn">Підписки</a></li>
+    <li><a href="#" class="sidebar-btn"><strong>Ви</strong></a></li>
+    <li><a href="#" class="sidebar-btn">Історія</a></li>
+    <li><a href="#" class="sidebar-btn">Плейлисти</a></li>
+    <li><a href="#" class="sidebar-btn">Ваші відео</a></li>
+    <li><a href="#" class="sidebar-btn">Дивитись пізніше</a></li>
+    <li><a href="#" class="sidebar-btn">Відео, які сподобались</a></li>
+    <li><a href="/settings.html" class="sidebar-btn">Налаштування</a></li>
+  </ul>
+</nav>
+
+<header class="topbar">
+  <!-- Тел кнопка меню -->
+  <button class="menu-toggle" aria-label="Відкрити меню" onclick="toggleSidebar()">☰</button>
+
+  <!-- тел логотип-->
+  <div class="mobile-logo">
+    <a href="https://tonyk4.github.io/TodTube/">
+      <img src="/TodTube_logo.d64fd3d1.png" alt="TodTube Logo">
+    </a>
+  </div>
+
+  <!-- Тел кнопка пошуку -->
+  <button class="search-toggle" aria-label="Пошук" onclick="toggleMobileSearch()">🔍</button>
+
+  <!-- Мобільне поле пошуку -->
+  <form class="search-form mobile-search-form" role="search" onsubmit="event.preventDefault();">
+    <input type="search" name="search" placeholder="Пошук" aria-label="Пошук">
+  </form>
+
+  <!-- Пк пошук -->
+  <form class="search-form desktop-search-form" role="search" onsubmit="event.preventDefault();">
+    <input type="search" name="search" placeholder="Пошук" aria-label="Пошук">
+    <button type="submit" aria-label="Пошук">🔍</button>
+  </form>
+</header>
+
+<main class="video-grid">
+  <div class="video-card">
+    <video controls="" poster="/preview1.c3d83d44.jpg" preload="metadata">
+      <source src="/video1.f240b0dc.mp4" type="video/mp4">
+    </video>
+    <h3>Насолоджуйтесь життям разом з Manhattan</h3>
+    <p>Blago • 777 тис. переглядів • 3 тижні тому</p>
+  </div>
+
+  <div class="video-card">
+    <video controls="" poster="/preview2.dd223874.jpg" preload="metadata">
+      <source src="/video2.9c01c0a9.mp4" type="video/mp4">
+    </video>
+    <h3>Мрієте про власне житло? Живіть у blago!</h3>
+    <p>Blago • 357 тис. переглядів • 3 місяці тому</p>
+  </div>
+
+  <div class="video-card">
+    <video controls="" poster="/preview3.06d755f7.jpg" preload="metadata">
+      <source src="/video3.ef71b4f8.mp4" type="video/mp4">
+    </video>
+    <h3>Наповнюйте своє життя особливим змістом у новому центрі міста – City by blago</h3>
+    <p>Blago • 500 переглядів • 3000 років тому</p>
+  </div>
+
+  <div class="video-card">
+    <video controls="" poster="/preview4.ba8f1737.jpg" preload="metadata">
+      <source src="/video4.3fc3e22e.mp4" type="video/mp4">
+    </video>
+    <h3>Blago - це Благо</h3>
+    <p>Blago • 2 млн переглядів • 2 роки тому</p>
+  </div>
+</main>
+
+<script src="/wwww.aec77530.js"></script>
+
+<script src="/wwww.59712999.js"></script></body></html>
