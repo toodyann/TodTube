@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel ./src/index.html --open"
+    "start": "parcel docs/index.html --open"
   },
   "keywords": [],
   "author": "",

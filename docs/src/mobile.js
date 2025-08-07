@@ -48,4 +48,5 @@ function toggleSidebar() {
       searchForm.classList.remove('active');
     }
   });
+
   
