@@ -17,7 +17,7 @@
   --video-card-hover-shift: -4px;
   --video-grid-columns: repeat(auto-fit, minmax(280px, 1fr));
   --video-title-size: 16px;
-  --video-title-margin: 10px 0 5px;
+  --video-title-margin: 10px 0px 5px;
   --video-desc-size: 14px;
   --video-desc-color: #555;
   --video-desc-margin: 0;
